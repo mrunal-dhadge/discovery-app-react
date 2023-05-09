@@ -38,7 +38,7 @@ const Map = () => {
     fetch(
         "https://disease.sh/v3/covid-19/countries"
     ).then(response => response.json()).then(result => {
-      setCountries(result.slice(0, 10));
+      setCountries(result);
     });
   };
 
